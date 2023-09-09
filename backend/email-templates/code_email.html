@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New User Register Verify</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            color: #555;
+        }
+        body {
+            box-sizing: border-box;
+        }
+        .box {
+            padding-top: 35px;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .container {
+            width: 600px;
+        }
+        .container .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 5px solid #555;
+            padding-top: 20px;
+            font-size: 20px;
+        }
+        .container .content p{
+            margin-top: 10px;
+        }
+        .container .content span {
+            display: block;
+            margin: 30px auto;
+            color: #666;
+            height: 40px;
+            font-size: 1.875rem;
+        }
+
+        .container .footer {
+            border-top: 2px solid #555;
+            padding-top: 20px;
+
+        }
+
+        .container .footer p {
+            margin-bottom: 10px;
+            font-family: Ubuntu, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1;
+            text-align: left;
+            color: #555555;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="header">{{ project_name}} - Email Verify</div>
+            <div class="content">
+                <p>We received a request to reset the password for email {{ email }}</p>
+                <div style="display: flex; justify-content: center; align-items: center">
+                    <span>{{code}}</span>
+                </div>
+            </div>
+            <div class="footer">
+                <p>If you didn't request to reset your password, you can disregard this email.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
