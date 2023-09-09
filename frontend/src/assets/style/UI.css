@@ -1,0 +1,87 @@
+input {
+    display: inline-flex;
+    font-size: 14px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 0 12px;
+    background: var(--themed-bg, var(--geist-background));
+    color: #000;
+    height: 40px;
+    transition: border-color 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input:focus {
+    outline: 0;
+    border: 1px solid #000;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    color: #666;
+    height: 40px;
+    font-style: 0.875rem;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    border-color: #000;
+}
+
+button:active {
+    background-color: #eaeaea;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+.fade-leave-from,
+.fade-enter-to {
+    opacity: 1;
+}
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.2s;
+}
